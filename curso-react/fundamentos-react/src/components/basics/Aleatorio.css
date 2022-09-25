@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #698;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerAleatorio {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2em;
+    background-color: #298;
+    padding: 20px;
+    position: relative;
+    top: 30vh;
+    box-shadow: 0 5px 5px #333;
+    border-radius:5px;
+}
+
+.containerAleatorio form{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap: 2em;
+}
+
+.containerAleatorio form div{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap: 1em;
+}
+
+.containerAleatorio .valores span{
+    width: 8em;
+    text-align:center;
+    line-height:30px;
+    background-color:#fff;
+    color:#155;
+    border-radius:5px;
+}
+
+.containerAleatorio .valores span p{
+    font-size:25px;
+    color:#155;
+    box-shadow: 0 5px 20px #333;
+}
+
+.containerAleatorio form .resultado{
+    font-size:30px;
+    width: 60%;
+    height:5vh;
+    cursor: pointer;
+    border: 1px solid #999 ;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #333;
+    background-color:#fff;
+    color:#155;
+    text-align:center;
+    gap: 0;
+}
+.containerAleatorio form .resultado button{
+    font-size:20px;
+    width: 80%;
+    height:100%;
+    cursor: pointer;
+    border:none ;
+    border-radius: 5px;
+    background-color:#155;
+    color:#fff;
+}
+
+.containerAleatorio form .resultado span{
+    padding: 0 20px;
+}
+
+.containerAleatorio footer{
+    position: absolute;
+    top: 60vh;
+}
