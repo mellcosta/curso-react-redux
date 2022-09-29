@@ -23,7 +23,7 @@ export default () => {
             <div className="AllCards">
 
                 <Card titulo="#08 - Renderização Condicional" color="#0000ff" >
-                    <ParOuImpar numero= {4} className='containerCondicional' />
+                    <ParOuImpar numero= {4}/>
                     <UsuarioInfo usuario =  {{ nome:'Joaquim'}} />
                     <UsuarioInfo usuario =  {{ email:'Joa2gmail'}} />
                     <UsuarioInfo usuario =  {{}} />

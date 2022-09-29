@@ -1,29 +1,25 @@
-# curso-react-redux
+# react_cod3r
+
+> Conteúdo do curso de React.js da COD3R
 
 ## Fundamentos do React
 
-### #04 - Aleatorio 
+> [Componente App](./fundamentos-react/src/App.jsx) >
+>[Componente Card](./fundamentos-react/src/components/layout/Card.jsx)
 
-Testando Valores aleatórios
+### #08 - [Renderização Condicional](./fundamentos-react/src/components/condicional/ParOuImpar.jsx)
 
-### #03 - React Fragment
+### #07 - [Desafio Repetição](./fundamentos-react/src/components/repeticao/TabelaProdutos.jsx)
 
-Fragmento
-Para resolver o erro 'Adjacent Component' (Adjacent JSX elements must be wrapped in an enclosing tag) , usam-se as seguintes tags para agrupar os elementos :
-````html
+### #06 - [Repetição](./fundamentos-react/src/components/repeticao/ListaAlunos.jsx)
 
-<React.Fragment> </React.Fragment>
-< > </> : não admite propriedades
+### #05 - [Componente Filho](./fundamentos-react/src/components/basics/Familia.jsx)
 
-````
+### #04 - [Aleatorio](./fundamentos-react/src/components/basics/Aleatorio.jsx)
 
-### #02 - Componente Com Propriedade
+### #03 - [React Fragment](./fundamentos-react/src/components/basics/Fragmento.jsx)
 
-Componente Com Parâmetro
-Situação do Aluno
-Pedro Silva teve nota 5.6 ( arrendondando 6) e foi Aprovado
+### #02 - [Componente Com Propriedade](./fundamentos-react/src/components/basics/ComParametro.jsx)
 
-### #01 - Primeiro Componente
+### #01 -[ Primeiro Componente ](./fundamentos-react/src/components/basics/Primeiro.js)
 
-Primeiro componente #2
-Outro elemento
