@@ -1,0 +1,15 @@
+.containerTabela table{
+    width: 100%;
+}
+
+.containerTabela th{
+    background-color: #b004fb;
+}
+
+.containerTabela .par{
+    background-color: #dbc4fc;
+}
+.containerTabela .impar{
+    background-color: #cd9bff;
+}
+

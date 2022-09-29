@@ -151,13 +151,13 @@ ReactDOM.render (
 /*
 2.2 Componente Card 
 
-----#01-----
+----#01, #02-----
 */
 import App from './App'
 
 
 import ReactDOM from 'react-dom'
-import Reat from 'react'
+import React from 'react'
 
 const Root = document.getElementById('root')
 

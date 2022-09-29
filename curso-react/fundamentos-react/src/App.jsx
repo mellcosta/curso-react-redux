@@ -1,8 +1,16 @@
 import React from 'react'
 
+import './index.css'
+import './App.css'
 import './components/layout/Card.css'
 import Card from './components/layout/Card'
 
+import UsuarioInfo from './components/condicional/UsuarioInfo'
+import ParOuImpar from './components/condicional/ParOuImpar'
+import TabelaProdutos from './components/repeticao/TabelaProdutos'
+import ListaAlunos from './components/repeticao/ListaAlunos'
+import Familia from './components/basics/Familia'
+import FamiliaMembro from './components/basics/FamiliaMembro'
 import  Aleatorio from './components/basics/Aleatorio'
 import Fragmento from "./components/basics/Fragmento"
 import ComParametro from './components/basics/ComParametro'
@@ -13,23 +21,53 @@ export default () => {
         <div className="app">
             <h1>Fundamentos do React</h1>
             <div className="AllCards">
-                <Card titulo="#04 - Aleatorio">
-                    <Aleatorio min={1} max={100}/>,
+
+                <Card titulo="#08 - Renderização Condicional" color="#0000ff" >
+                    <ParOuImpar numero= {4} className='containerCondicional' />
+                    <UsuarioInfo usuario =  {{ nome:'Joaquim'}} />
+                    <UsuarioInfo usuario =  {{ email:'Joa2gmail'}} />
+                    <UsuarioInfo usuario =  {{}} />
+                    <UsuarioInfo/>
                 </Card>
 
-                <Card titulo="#03 - React Fragment">
-                <Fragmento />
+                <Card titulo="#07 - Desafio Repetição" color="#e000fc">
+                    <TabelaProdutos/>
                 </Card>
 
-                <Card titulo="#02 - Componente Com Propriedade">
-                <ComParametro
-                    titulo="Situação do Aluno"
-                    aluno="Pedro Silva"
-                    nota={5.6}/>
+                <Card titulo="#06 - Repetição" color="#fee500">
+                    <ListaAlunos/>
                 </Card>
 
-                <Card titulo="#01 - Primeiro Componente">
-                <Primeiro> </Primeiro>
+                <Card titulo="#05 - Componente Filho" color="#ff0000">
+                    <Familia sobrenome="Costa">
+                        <FamiliaMembro nome="Juliana"/>
+                        <FamiliaMembro nome="Rosa"/>
+                        <FamiliaMembro nome="Kersey"/>
+                        <FamiliaMembro nome="Enock"/>
+                        <FamiliaMembro nome="Newton"/>
+                        <FamiliaMembro nome="Melissa"/>
+                    </Familia>
+                </Card>
+
+                <Card titulo="#04 - Aleatorio" color="#499">
+                    <Aleatorio min={1} max={100}/>
+                </Card>
+
+                <Card titulo="#03 - React Fragment" color="#fa6900">
+                    <Fragmento color="908">
+                        Testando
+                    </Fragmento>
+                </Card>
+
+                <Card titulo="#02 - Componente Com Propriedade" color="#a4f71a">
+                    <ComParametro
+                        titulo="Situação do Aluno"
+                        aluno="Pedro Silva"
+                        nota={5.6}/>
+                </Card>
+
+                <Card titulo="#01 - Primeiro Componente" color="#e94c6f">
+                    <Primeiro> </Primeiro>
                 </Card>
             </div>
         </div>
@@ -37,6 +75,9 @@ export default () => {
 };
 
 /*
+
+------Formas de representar as Funções-----
+
 export default function App () {
     return (
         <div>
@@ -45,8 +86,8 @@ export default function App () {
     )
 }
 
----Arrow function----
 
+---Arrow function----
 
 export default () => {
     return (
@@ -55,6 +96,7 @@ export default () => {
         </div>
     )
 };
+
 
 ---Arrow function com parâmetros----
 
@@ -70,7 +112,6 @@ export default (app) => {
 
 ---Arrow function com parâmetro indefinido----
 
-
 export default _ => 
         <div>
             <h1>Arrow Function com Parâmetros indefinido</h1>
@@ -78,8 +119,8 @@ export default _ =>
             <p>Pode remover o return() e as chavetas</p>
         </div>
 
----Arrow function com parâmetro fora dos ()----
 
+---Arrow function com parâmetro fora dos ()----
 
 export default parametro => 
         <div>

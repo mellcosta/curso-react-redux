@@ -11,8 +11,10 @@ Testando Valores aleatórios
 Fragmento
 Para resolver o erro 'Adjacent Component' (Adjacent JSX elements must be wrapped in an enclosing tag) , usam-se as seguintes tags para agrupar os elementos :
 ````html
+
 <React.Fragment> </React.Fragment>
 < > </> : não admite propriedades
+
 ````
 
 ### #02 - Componente Com Propriedade

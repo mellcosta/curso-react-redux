@@ -18,8 +18,8 @@ import React from 'react'
 const Primeiro = () => {
     return(
         <div>
-            <h2> Primeiro componente #2 </h2>  
-            <p>Outro elemento</p>
+            <h2> Primeiro componente</h2>  
+            <p>Seja Bem Vindo ao primeiro componente</p>
         </div> 
     )
 } 
