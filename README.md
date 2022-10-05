@@ -5,7 +5,15 @@
 ## Fundamentos do React
 
 > [Componente App](./fundamentos-react/src/App.jsx) >
->[Componente Card](./fundamentos-react/src/components/layout/Card.jsx)
+> [Componente Card](./fundamentos-react/src/components/layout/Card.jsx)
+
+### #12 - [Contador](./fundamentos-react/src/components/contador/Contador.jsx)
+
+### #11 - [Componente Controlado (Input)](./fundamentos-react/src/components/formulario/Input.jsx)
+
+### #10 - [Comunicação Indireta](./fundamentos-react/src/components/comunicacao/IndiretaPai.jsx)
+
+### #09 - [Comunicação Directa](./fundamentos-react/src/components/comunicacao/DiretaPai.jsx)
 
 ### #08 - [Renderização Condicional](./fundamentos-react/src/components/condicional/ParOuImpar.jsx)
 
