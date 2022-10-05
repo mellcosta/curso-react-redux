@@ -7,7 +7,7 @@ export default props =>{
     const produtosTab = produtos.map ((produto, i) => {
         return(
                 <tr className={i % 2 === 0 ? 'par' : 'impar'}>
-                   <td>{produto.id}</td>
+                    <td>{produto.id}</td>
                     <td>{produto.name}</td>
                     <td>$ {produto.price}</td>  
                 </tr>
@@ -24,7 +24,7 @@ export default props =>{
                     </tr>
                 </thead>  
                 <tbody>
-                        {produtosTab} 
+                    {produtosTab} 
                 </tbody>
             </table>
         </div>

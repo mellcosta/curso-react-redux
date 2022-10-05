@@ -1,0 +1,32 @@
+.containerInput h2{
+    color: #444;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.Input{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.Input input{
+    border: none;
+    border-bottom: 2px solid #999;
+    font-weight: 700;
+}
+
+.Input input:focus-within{
+    background-color: #000;
+    color: #fff;
+}
+
+.Input button{
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 20px;
+}

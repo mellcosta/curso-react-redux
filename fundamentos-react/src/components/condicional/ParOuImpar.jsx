@@ -4,7 +4,7 @@ export default props => {
     const number = props.numero
     const isPar = number % 2 === 0
     return(
-        <div>
+        <div className='containerCondicional'>
             <p>
                 Usando o operador ternário como condicional, pode-se afirmar que o número 
                 <strong> {number} </strong>  

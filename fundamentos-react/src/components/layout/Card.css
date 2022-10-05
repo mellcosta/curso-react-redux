@@ -50,6 +50,15 @@ body{
     top: 2px;
 }
 
+.containerCondicional{
+    background-color: #3399ff;
+    color: #fff;
+    border: 2px dashed #0000ff;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
 @media screen and (min-width:600px){
     .card{
         width: 400px;

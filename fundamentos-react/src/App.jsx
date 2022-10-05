@@ -5,6 +5,11 @@ import './App.css'
 import './components/layout/Card.css'
 import Card from './components/layout/Card'
 
+import Contador2 from './components/contador/Contador2'
+import Contador from './components/contador/Contador'
+import Input from './components/formulario/Input'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+import DiretaPai from './components/comunicacao/DiretaPai'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
@@ -16,11 +21,39 @@ import Fragmento from "./components/basics/Fragmento"
 import ComParametro from './components/basics/ComParametro'
 import Primeiro from "./components/basics/Primeiro"
 
+
+/**Practice */
+import Practice from './components/practice/Practice'
+import Valor from './components/practice/Valor'
+
 export default () => {
     return (
         <div className="app">
-            <h1>Fundamentos do React</h1>
+            <h1>Fundamentos do React🌈</h1>
             <div className="AllCards">
+
+                <Card titulo="  # Practice #" color="#999">
+                    <Practice min="0" max="500"  >
+                        <Valor/>
+                    </Practice>
+                </Card>
+
+                <Card titulo="#12 - Contador" color="#a000fa" className='contador'>
+                    <Contador numeroInicial = {0} 
+                              primeiroNumero = {10}/>
+                </Card>
+
+                <Card titulo="#11 - Componente Controlado (Input)" color="#000">
+                    <Input/>
+                </Card>
+
+                <Card titulo="#10 - Comunicação Indireta" color="#ff4009">
+                    <IndiretaPai/>
+                </Card>
+
+                <Card titulo="#09 - Comunicação Direta" color="#063">
+                    <DiretaPai/>
+                </Card>
 
                 <Card titulo="#08 - Renderização Condicional" color="#0000ff" >
                     <ParOuImpar numero= {4}/>
@@ -49,7 +82,7 @@ export default () => {
                     </Familia>
                 </Card>
 
-                <Card titulo="#04 - Aleatorio" color="#499">
+                <Card titulo="#04 - Aleatório" color="#499">
                     <Aleatorio min={1} max={100}/>
                 </Card>
 

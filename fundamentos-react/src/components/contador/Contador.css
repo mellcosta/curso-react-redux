@@ -1,0 +1,57 @@
+.containerContador table{
+    width: 100%;
+    color: #fff;
+    line-height: 30px;
+}
+
+.containerContador table th{
+    background-color: #a000fa;
+    padding: 10px;
+}
+
+.containerContador table td{
+    background-color: #99f;
+    padding: 10px;
+}
+
+.containerContador table td strong{
+    color: #a000fa;
+}
+
+.containerContador button{
+    background: #a000fa ;
+    color: #fff;
+    border: 2px solid #a000fa ;
+    border-radius: 5px;
+    padding: 0px 8px;
+    font-size: 30px;
+    cursor: pointer;
+    margin:10px;
+    line-height:25px;
+}
+
+.containerContador .inc{
+    background: #fff ;
+    color: #a000fa;
+    padding: 0px 5px;
+}
+
+.containerContador #passoInput{
+    width: 50px;
+    border: none;
+    border-bottom:2px double #a000fa;
+    background: none;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.containerContador #passoInput:focus-within,
+.containerContador #passoInput:hover
+{
+    background: #a000fa;
+    text-align: center;
+    outline: none;
+    border-radius: 10px;
+}
+
