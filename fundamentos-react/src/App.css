@@ -1,9 +1,19 @@
 .app{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     gap:1em;
     justify-content : center;
     color:#fff;
+}
+
+
+.coder{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 3em;
 }
 
 .AllCards{
