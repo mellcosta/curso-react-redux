@@ -5,6 +5,7 @@ import './App.css'
 import './components/layout/Card.css'
 import Card from './components/layout/Card'
 
+import Mega from './components/mega/Mega'
 import Contador from './components/contador/Contador'
 import Input from './components/formulario/Input'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
@@ -28,11 +29,6 @@ import Valor from './components/practice/Valor'
 export default function App() {
     return (
         <div className="app">
-            <div>
-                <label htmlFor="checkbox">Curso Coder</label>
-                <input type="checkbox" id='checkbox'/>
-                <a href="./components/basics/Primeiro">primeiro</a>
-            </div>
             <div className="coder">
                 
                 <h1>Fundamentos do React🌈</h1>
@@ -42,6 +38,10 @@ export default function App() {
                         <Practice min="0" max="500"  >
                             <Valor/>
                         </Practice>
+                    </Card>
+
+                    <Card titulo="#13 - Mega" color="#00ccd6">
+                        <Mega qtde={8}></Mega>
                     </Card>
 
                     <Card titulo="#12 - Contador" color="#a000fa" className='contador'>
