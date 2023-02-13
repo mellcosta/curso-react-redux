@@ -31,6 +31,9 @@ export default props => {
   const [qtde, setQtde] = useState(props.qtde || 6)
   const numerosIniciais = Array(qtde).fill(0)
   const [numeros, setNumeros] = useState(numerosIniciais)
+
+  // Para iniciar com numeros  aleatórios
+  // const numerosIniciais = gerarNumeros(qtde)
   
   return (
     <Div>
@@ -38,12 +41,30 @@ export default props => {
       <h3>{numeros.join(' ')}</h3>
       <QtdeNumeros>
         <label>Qtde de Números</label>
-        <Input type="number" value={qtde}
-             onChange={e => setQtde(+e.target.value)} />
+        {/* Para gerar número ao alterar quantidade */}
+        <Input 
+            min={3}
+            max={15}
+            type="number"
+            value={qtde}
+             onChange={(e) => {
+              setQtde(+e.target.value)
+              setNumeros(gerarNumeros(+e.target.value))
+              }} />
       </QtdeNumeros>
-      <Button onClick= {_ => setNumeros(gerarNumeros(qtde))}>
+      <Button onClick= {(_) => setNumeros(gerarNumeros(qtde))}>
           Gerar Números 
       </Button>
     </Div>
   )
 }
+
+/*
+
+ Gera numeros clicando no botão sempre..
+      <Input type="number" value={qtde}
+        onChange={e => setQtde(+e.target.value)} />
+      <Button onClick= {_ => setNumeros(gerarNumeros(qtde))}>
+          Gerar Números 
+      </Button>
+*/
