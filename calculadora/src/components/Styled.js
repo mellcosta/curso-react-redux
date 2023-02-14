@@ -15,10 +15,10 @@ export const Display = styled.div `
 export const Button = styled.button `
  font-size: 1.5em;
  font-weight: bold;
- border: 1px solid #999;
+ border: 1px solid #bbb;
 
  &:active {
-  background-color: #999;
+  background-color: #ccc;
   border: none;
  }
 `;
