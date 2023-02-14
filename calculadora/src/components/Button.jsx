@@ -1,9 +1,22 @@
 import React, { Component } from "react";
 
-import { Button, double, triple, operation } from "./Styled";
+import { Button} from "./Styled";
 
-export default props => 
-  <Button onClick={e => props.click(props.label)}  >
-    {props.label}
-    {double}
-  </Button>
+import './Button.css'
+
+export default props => {
+  let classes = 'button ' 
+  classes += props.operation ? 'operation' : ''
+  classes += props.triple ? 'triple' : ''
+  classes += props.double ? 'double' : ''
+
+
+  return (
+    <Button 
+    onClick={e => props.click(props.label)}
+    className={classes} >
+      {props.label}
+    </Button>
+
+  )
+}
