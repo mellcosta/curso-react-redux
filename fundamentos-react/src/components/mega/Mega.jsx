@@ -47,7 +47,7 @@ export default props => {
             max={15}
             type="number"
             value={qtde}
-             onChange={(e) => {
+            onChange={(e) => {
               setQtde(+e.target.value)
               setNumeros(gerarNumeros(+e.target.value))
               }} />
