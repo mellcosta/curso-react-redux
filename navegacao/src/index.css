@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.Link:hover{
+  background-color: #0070fa;
+}

@@ -1,11 +1,11 @@
 import React, {Component} from "react"
-import { Div, Subtitle, Text } from "../../style"
+import { Span, Title, Text } from "../../style"
 
 const About = props => (
-  <Div>
-    <Subtitle>Componente About</Subtitle>
-    <Text>O nosso Sistema ...</Text>
-  </Div>
+  <Span>
+    <Title>Sobre</Title>
+    <Text>O nosso Sistema foi criado...</Text>
+  </Span>
 )
 
 export default About

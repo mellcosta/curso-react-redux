@@ -1,11 +1,11 @@
 import React, {Component} from "react"
-import { Div, Subtitle, Text } from "../../style"
+import { Span, Title, Text } from "../../style"
 
 const Home = props => (
-  <Div>
-    <Subtitle>Componente Home</Subtitle>
+  <Span>
+    <Title>Home</Title>
     <Text>Bem vindo</Text>
-  </Div>
+  </Span>
 )
 
 export default Home

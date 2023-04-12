@@ -1,12 +1,17 @@
 import React,{Component} from "react"
+import { BrowserRouter as Router } from 'react-router-dom'
 
-import './App.css'
-import { Title, Text } from '../style'
+import Menu from "../components/layout/Menu"
+import Content from "../components/layout/Content"
+import { Div } from "../style"
 
 const App = props => (
-  <div className="App">
-    <Title>Componente App</Title> 
-    <Text>Text</Text>
-  </div>
+    <Div>
+      <Router>
+        <Menu />
+        <Content />
+      </Router>
+    </Div>
 )
+  
 export default App
