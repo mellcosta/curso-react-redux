@@ -1,10 +1,11 @@
-import './App.css'
+import React,{Component} from "react"
 
-import React from "react";
+import './App.css'
+import { Title } from '../style'
 
 const App = props => (
   <div className="App">
-    Componente App
+    <Title>Componente App</Title> 
   </div>
 )
 export default App
