@@ -20,6 +20,13 @@ const UseEffect = (props) => {
     //Desafio
     const isPar = number % 2 === 0
 
+    //Resolução
+    const [status, setStatus] = useState('Ímpar')
+
+    useEffect( function() {
+        setStatus(number % 2 === 0 ? 'Par' : 'Ímpar')
+    }, [number])
+
     return (
         <div className="UseEffect">
             <PageTitle
@@ -46,7 +53,10 @@ const UseEffect = (props) => {
             </div>
 
             <SectionTitle title="Resolução" />
-            
+            <div>
+                <span className="text">Status: </span>
+                <span className="text red"> {status} </span>
+            </div>
         </div>
     )
 }
