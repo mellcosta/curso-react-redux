@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import { Span, Title, Text } from "../../style"
 
 const Param = props => {
-  const {id } = useParams ()
+  const {id} = useParams ()
     return (
       <Span>
         <Title>Param</Title>
