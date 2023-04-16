@@ -8,7 +8,7 @@ function calcFactorial (num) {
     if (n === 0) return 1
     return calcFactorial (n - 1) * n
 }
-
+ 
 const UseEffect = (props) => {
     const [number, setNumber] = useState(1)
     const [factorial, setFactorial] = useState(1)
@@ -16,6 +16,12 @@ const UseEffect = (props) => {
     useEffect(function() {
         setFactorial(calcFactorial(number))
     }, [number])
+
+    useEffect(function() {
+        if(factorial > 1000000) {
+            document.title = 'Maior de 1000000'
+        }
+    }, [factorial])
 
     //Desafio
     const isPar = number % 2 === 0
