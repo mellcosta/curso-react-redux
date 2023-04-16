@@ -3,6 +3,11 @@ import PageTitle from '../../components/layout/PageTitle'
 import SectionTitle from '../../components/layout/SectionTitle'
 
 const UseRef = (props) => {
+
+    const merge = function(s1, s2) {
+        return [...s1].map((e, i) => `${e}${s2 [i] || ""}`).join("")
+    }
+
     const [value1, setValue1] = useState('')
     const count = useRef(0)
 
