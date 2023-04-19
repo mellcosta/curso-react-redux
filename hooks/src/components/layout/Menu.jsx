@@ -8,7 +8,7 @@ const Menu = props => (
         <nav>
             <ul>
                 <li>
-                    <Link to="/">Início</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
                     <Link to="/useState">useState()</Link>

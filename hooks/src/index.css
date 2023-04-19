@@ -38,3 +38,15 @@ body {
     align-items: center;
     text-align: center;
 }
+
+p {
+    font-size: 20px;
+    padding: 10px 30px 10px 30px;
+}
+
+.code {
+    font-size: 15px;
+    padding-left: 100px;
+    height: 900vh;
+    width: 100vh;
+}
