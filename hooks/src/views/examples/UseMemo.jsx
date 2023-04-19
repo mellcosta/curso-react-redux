@@ -29,7 +29,10 @@ const UseMemo = (props) => {
                 <input type="number" className="input" 
                     value={n3} onChange={e => setN3(parseInt(e.target.value))} />
 
-                <span className="text"> { result } </span>
+                <p className="text">
+                    n1 + n2 = <span className="text red">{ result }</span>
+                </p>
+
             </div>
         </div>
     )
