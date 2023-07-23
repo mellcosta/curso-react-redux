@@ -1,5 +1,6 @@
 import React, { useReducer } from 'react'
 import PageTitle from '../../components/layout/PageTitle'
+import SectionTitle from '../../components/layout/SectionTitle'
 
 const initialState = {
     user: null,
@@ -14,7 +15,18 @@ function reducer(state, action) {
             return {...state, number: state.number + 2}
         case 'login':
             return { ...state, user: {name: action.payload}}
-        default  : return state
+
+            // My way
+        case 'numberMulti7':
+            return{...state, number: state.number * 7 }
+        case 'numberDiv25':
+            return{...state, number: state.number / 25 }
+        case 'numberInt':
+            return{...state, number: parseInt(state.number) }
+        case 'numberN':
+            return{...state, number: state.number + Math.random(action.n) * 10}
+        default : 
+            return state
     }
 }
 
@@ -40,9 +52,31 @@ const UseReducer = (props) => {
                         +2
                     </button>
                     <button className="btn" 
-                        onClick={() => dispatch ({type: 'login', playload: 'Mel'}) } >
+                        onClick={() => dispatch ({type: 'login', payload: 'Mel'}) } >
                         Login
                     </button>
+                </div>
+            </div>
+
+            <SectionTitle
+                title="Desafio useReducer"
+                subtitle="Minha Versão"
+            />
+
+            <div className="center">
+                <div>
+                    <button className="btn"
+                        onClick={ () => dispatch ({type: 'numberMulti7'})}>
+                    x 7</button>
+                    <button className="btn"
+                        onClick={ () => dispatch ({type: 'numberDiv25'})}>
+                    / 25</button>
+                    <button className="btn"
+                        onClick={ () => dispatch ({type: 'numberInt'})}>
+                    Int</button>
+                    <button className="btn"
+                        onClick={ () => dispatch ({type: 'numberN', n: null})}>
+                    N</button>
                 </div>
             </div>
         </div>
