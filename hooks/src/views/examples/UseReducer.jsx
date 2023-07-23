@@ -11,10 +11,10 @@ const initialState = {
 
 function reducer(state, action) {
     switch(action.type) {
-        case 'numberAdd2': 
-            return {...state, number: state.number + 2}
         case 'login':
             return { ...state, user: {name: action.payload}}
+        case 'numberAdd2': 
+            return {...state, number: state.number + 2}
 
             // My way
         case 'numberMulti7':
@@ -23,8 +23,8 @@ function reducer(state, action) {
             return{...state, number: state.number / 25 }
         case 'numberInt':
             return{...state, number: parseInt(state.number) }
-        case 'numberN':
-            return{...state, number: state.number + Math.random(action.n) * 10}
+        case 'numberAddN':
+            return{...state, number: state.number + action.n}
         default : 
             return state
     }
@@ -67,16 +67,19 @@ const UseReducer = (props) => {
                 <div>
                     <button className="btn"
                         onClick={ () => dispatch ({type: 'numberMulti7'})}>
-                    x 7</button>
+                    x7</button>
                     <button className="btn"
                         onClick={ () => dispatch ({type: 'numberDiv25'})}>
-                    / 25</button>
+                    /25</button>
                     <button className="btn"
                         onClick={ () => dispatch ({type: 'numberInt'})}>
                     Int</button>
                     <button className="btn"
-                        onClick={ () => dispatch ({type: 'numberN', n: null})}>
-                    N</button>
+                        onClick={ () => dispatch ({type: 'numberAddN', n: 10})}>
+                    +10</button>
+                    <button className="btn"
+                        onClick={ () => dispatch ({type: 'numberAddN', n: -5})}>
+                    -5 </button>
                 </div>
             </div>
         </div>
